@@ -1,0 +1,2 @@
+# trendpulse-vamsikrishareddypeddireddy
+Mini_Project_1
