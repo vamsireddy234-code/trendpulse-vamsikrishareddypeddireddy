@@ -1,12 +1,13 @@
 import pandas as pd
+import glob
 
 #Read teh json in dataframes
-
-df = pd.read_json(r"data\trends_20260413.json")
+jsn = glob.glob(r"data\trends_*.json")
+df = pd.read_json(jsn[0])
 
 #we are taking 0 insex of shape funtion
 
-print(f"Loaded {df.shape[0]} stories from data/trends_20260413.json")
+print(f"Loaded {df.shape[0]} stories from {jsn[0]}")
 
 #we are taking 0 insex of shape funtion
 
